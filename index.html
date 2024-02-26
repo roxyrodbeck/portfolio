@@ -1,141 +1,387 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="homepageassets/styless.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Edu+NSW+ACT+Foundation&family=Sriracha&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Days+One&family=Shadows+Into+Light&family=Work+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-
-
-    <title>Roxana Rodriguez-Becker</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.Rodriguez-Becker</title>
+    <link rel="stylesheet" href="RRBassets/style.css">
+    <link rel="stylesheet" href="RRBassets/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
+
 <body>
-    <header>
-        <navbar id="navbar">
+    <nav id="desktop-nav">
+        <div class="logo">Roxana Rodriguez-Becker</div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+        </div>
+    </nav>
 
-            <ul id="navbar-ul">
-                <li class="navbar-li"><a href="#welcome-section">Home</a></li>
-                <li class="navbar-li"><a href="#aboutme">About Me</a></li>
-                <li class="navbar-li"><a href="#projects">Projects</a></li>
-                <li class="navbar-li"><a href="#hireme">Hire Me</a></li>
-                <li class="navbar-li"><a href="#contact">Contact Me</a></li>
-        
-            </ul>
-            </a>
-        </navbar>
+    <nav id="hamburger-nav">
+        <div class="logo">Roxana Rodriguez-Becker</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+        </div>
+    </nav>
 
-    </header>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img 
+            src="RRBassets/headshot2.jpg" 
+            alt="Roxy profile picture" 
+            class="roxy-photo-1"
+            />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Roxana Rodriguez-Becker</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('/RRBassets/RodriguezBecker%20CV%202.24.pdf')">
+                Download CV</button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="RRBassets/linkedin.png" 
+                alt="My Linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/roxana-rodriguez-becker'" 
+                target="_blank"
+                />
+                <img 
+                src="RRBassets/github.png" 
+                alt="My Github profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/roxyrodbeck'"
+                target="_blank"
+                />
+            </div>
+        </div>
+    </section>
 
-<section id="welcome-section">
-    <div class="container">
-        <p><span class="hi">Hi!</span></p>
-        <h1 class="title">
-    
-        <span class="title-word title-word-1">I'm</span>
-        <span class="title-word title-word-2"> Roxana</span>
-        <span class="title-word title-word-3"> Rodriguez</span>
-        -
-        <span class="title-word title-word-4">Becker</span>,</h1>
-<div class="engineer">Software Engineer.</div>
-    </div>
-</section>
-
-<section id="aboutme" class="aboutme">
-  <div id="wholeabout">
-    <div id="divheadshot"><img id="headshot" src="homepageassets/roxy_laptop.jpg" alt="A brunette female in a pink sweater is smiling at the camera, holding her laptop with several stickers on it. she is wearing glasses and has bangs."></div>
-    <div id="aboutme-text">
-      <h3>About Me</h3>
-      <br>
-      <p>My dad instilled in me a love of Algebra, so I entered the world of secondary math and taught/led for almost ten years. Teaching middle school students math is no easy feat - but it was fun! I loved explaining logic and algorithms in a way they (well, most of them) understood. I even moved into leadership and data analysis for a few years.</p>
-      <br>
-      <p>Never let them know your next move! After almost a decade of math I frequently found myself in the library and undertaking more non-math responsibilities, such as training (and troubleshooting) our staff on new software. I decided to pursue my love of reading and information and went back to school for my Masters in Library and Information Science.</p>
-      <br>
-      <p>At this point I was in my first year of motherhood, Hurricane Harvey had flooded our home, we were displaced for 6 months, and I had just been hired as a librarian for the first time. Talk about a whirlwind. (*badum-psh*)</p>
-      <br>
-      <p>Meanwhile, my love of documenting grew. I went from learning some HTML and CSS for LiveJournal in the early 2000s, to MySpace, then Blogger, and finally WordPress. Some of these skills have assisted me in my current job, where I am also the Campus Communications and Website Coordinator. I recently retired my blog, but it was a wonderful way to unknowingly dip my toe into the career I was meant for.</p>
-      <br>
-      <p>For the last year I have been studying web development through Scrimba, 100devs, and freeCodeCamp. I may be a junior when it comes to the role of a Software Engineer, but with over 15 years of experience under my belt and my enthusiasm for learning, I would require shorter onboarding and ramp up time. I am well spoken and diplomatic, whether in writing or verbally. My history in math education shows that I can break down complex concepts into more digestible chunks, and my background in library and information science makes me great at research and knowing when to ask for help.</p>
-      <br>
-      <p class="checkout">Please check out some of the projects I have been working on below!</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="projects-section">
-    <div class="tiles">
-        <a
-        href="https://roxanarodriguezbecker.com/feedrate.html"
-        target="_blank"
-        class="project-tile">
-        <img
-          class="project-image"
-          src="homepageassets/tubefeed.png"
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="RRBassets/RoxynHappy.jpg" 
+                alt="Profile picture" 
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="RRBassets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="RRBassets/education.png" 
+                        alt="Education icon" 
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelors Degree <br />Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                <!--    <p>My dad instilled in me a love of Algebra, so I entered the world of secondary math and taught/led for almost ten years. Teaching middle school students math is no easy feat - but it was fun! I loved explaining logic and algorithms in a way they (well, most of them) understood. I even moved into leadership and data analysis for a few years.</p>-->
+                <!--<br>-->
+                <!--        <p>Never let them know your next move!</p>-->
+                <!--<br>-->
+                <!--        <p>After almost a decade of math I frequently found myself in the library and undertaking more non-math responsibilities, such as training (and troubleshooting) our staff on new software. I decided to pursue my love of reading and information and went back to school for my Masters in Library and Information Science.</p>-->
+                <!--<br>-->
+                <!--       <p>At this point I was in my first year of motherhood, Hurricane Harvey had flooded our home, we were displaced for 6 months, and I had just been hired as a librarian for the first time. Talk about a whirlwind. (*badum-psh*)</p> -->
+                <!--<br>-->
+                <!--        <p>Meanwhile, my love of content creation grew. I went from learning some HTML and CSS for LiveJournal in the early 2000s, to MySpace, then Blogger, and finally WordPress. Some of these skills have assisted me in my current job, where I am also the Campus Communications and Website Coordinator. I recently retired my blog, but it was a wonderful way to unknowingly dip my toe into the career I was meant for.</p>-->
+                <!--<br>-->
+                        <p>While I had dabbled in HTML/CSS for about a decade, in the past year I have been actively studying web development through Scrimba, 100devs, and freeCodeCamp. I may be a junior when it comes to the role of a Software Engineer, but with over 15 years of professional experience under my belt and my enthusiasm for learning, I would require shorter ramp up time.</p>
+                        <p>My background in a professional work environment has assisted in strengenthing my work ethic and office etiquette, which assists in a positive work environment. </p>
+                        <p>I am well spoken and diplomatic, whether in writing or verbally. My history in math education shows that I can break down complex concepts into more digestible chunks, and my background in library and information science makes me great at research and knowing when to ask for help.</p>
+                </div>
+            </div>
+        </div>
+        <img src="RRBassets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='#experience'"
         />
-        <p class="project-title">Tube Feed Rate Calculator</p>
-        <span class="languages"><i class="fab fa-html5 fa-2x"></i><i class="fab fa-css3 fa-2x"></i><i class="fab fa-js fa-2x"></i></span>
-        <!-- <p class="tubefeed">I have a "medically complex" son. He receives tube feeds, and during one of the worst years in his short life, he was hospitalized nine times.
-        Sometimes the Dieticians would come in and make up a tube feed plan for him. The limited hours and specific amount of milliliters would throw the nursing staff off.
-        My husband and I would assist them and sometimes explain the math, which gave me the idea for this calculator.
-        Someone could input any two pieces of data, and teh third will appear below the input boxes. -->
-      </a>
+    </section>
 
-      <a
-        href="https://www.roxanarodriguezbecker.com/landing.html"
-        target="_blank"
-        class="project-tile">
-        <img
-          class="project-image"
-          src="homepageassets/landing-page.png"
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                           
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Javascript</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Node.js</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            
+                        </div>
+                    </article>
+                    <!--<article>-->
+                    <!--    <img src="RRBassets/checkmark.png" -->
+                    <!--    alt="Experience icon" -->
+                    <!--    class="icon"-->
+                    <!--    />-->
+                    <!--    <div>-->
+                    <!--        <h3> </h3>-->
+                        
+                    <!--    </div>-->
+                    <!--</article>-->
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Soft Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Professional work experience</h3>
+                            
+                        </div>
+                    </article>
+                     <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Clear Communication</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Collaboration</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Team member/lead</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="RRBassets/checkmark.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Adaptability</h3>
+                            
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="RRBassets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='#projects'"
         />
-        <p class="project-title">Landing Page</p>
-        <span class="languages"><i class="fab fa-html5 fa-2x"></i><i class="fab fa-css3 fa-2x"></i></span>
-      </a>
+    </section>
 
-      <a
-        href="https://www.roxanarodriguezbecker.com/SFL.html"
-        target="_blank"
-        class="project-tile">
-        <img
-          class="project-image"
-          src="homepageassets/SFLhome.png"
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+
+                <div class="article-container">
+                    <img 
+                    src="RRBassets/tubefeedratecalc.jpg" 
+                    alt="Project 1" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Feed Rate</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.roxanarodriguezbecker.com/feedrate.html'" 
+                    target="_blank"
+                    >
+                Link</button>
+                <!--    <button class="btn btn-color-2 project-btn" -->
+                <!--    onclick="location.href='https://www.roxanarodriguezbecker.com/feedrate.html'"-->
+                <!--    >-->
+                <!--Live Demo</button>-->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="RRBassets/landing-page.png" 
+                    alt="Project 2" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Landing Page</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.roxanarodriguezbecker.com/landing.html'" 
+                    target="_blank"
+                    >
+                Link</button>
+                <!--    <button class="btn btn-color-2 project-btn" -->
+                <!--    onclick="location.href='https://github.com'"-->
+                <!--    >-->
+                <!--Live Demo</button>-->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="RRBassets/SFLhome.jpg" 
+                    alt="Project 3" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Small Business</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://www.roxanarodriguezbecker.com/SFL.html'" 
+                    target="_blank"
+                    >
+                Link</button>
+                <!--    <button class="btn btn-color-2 project-btn" -->
+                <!--    onclick="location.href='https://github.com'"-->
+                <!--    >-->
+                <!--Live Demo</button>-->
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="RRBassets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='#contact'"
         />
-        <p class="project-title">Small Business</p>
-        <span class="languages"><i class="fab fa-html5 fa-2x"></i><i class="fab fa-css3 fa-2x"></i><i class="fab fa-js fa-2x"></i></span>
-      </a>
+    </section>
 
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+            <img 
+            src="RRBassets/email.png" 
+            alt="Email icon" 
+            class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Roxy.Rodriguez@gmail.com">Roxy.Rodriguez@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+            <img src="RRBassets/linkedin.png" 
+            alt="LinkedIn icon" 
+            class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/roxana-rodriguez-becker">LinkedIn</a></p>
+        </div>
     </div>
-</section>
+    </section>
 
-<section id="hireme" class="hireme">
-  <div class="cv">
-    <iframe src = "homepageassets/RodriguezBecker GEN CV Resume.pdf">
-    </iframe>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <a href="mailto: roxy.rodriguez@gmail.com" target="_blank"><button id="email">Email</button></a>
-</section>
-
-
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Roxana Rodriguez-Becker. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
-<footer>
-    <a href="https://www.linkedin.com/in/roxana-rodriguez-becker/" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-    <a href="https://github.com/roxyrodbeck" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-    <a id="profile-link" href="https://www.instagram.com/grrfeisty" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-    <a href="https://www.twitter.com/roxlearnscode" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
-    
-    
-    
-</footer>
-
 </html>
