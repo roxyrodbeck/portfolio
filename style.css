@@ -397,6 +397,11 @@
       flex-direction: column;
       height: 70vh;
    }
+
+   .emailHover:hover {
+        cursor: pointer;
+        transition: 2s;
+   }
   
    .contact-info-upper-container {
       display: flex;
