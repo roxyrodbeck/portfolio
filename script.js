@@ -5,18 +5,12 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-const button = document.querySelector(".emailButton");
-button.addEventListener("click", function() {
-    const copyText = document.getElementById("myEmail");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-    alert("copied!")
-});
-// function copyEmail() {
-//     const copyText = document.getElementById("myEmail");
-//     copyText.select();
-//     copyText.selectSelectionRange(0, 99999);
-//     navigator.clipboard.writeText(copyText.value);
-//     alert("copied!")
-// }
+function copyEmail() {
+    const emailElement = document.querySelector(".copy-email");
+    const emailText = emailElement.textContent || emailElement.innerText;
+    navigator.clipboard.writeText(emailText).then(() => {
+        alert("Email copied to clipboard!");
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+};
