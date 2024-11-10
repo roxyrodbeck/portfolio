@@ -356,7 +356,6 @@
   article {
       display: flex;
       width: 10rem;
-      /*justify-content: space-between; */
       gap: 0.5rem
   }
   
@@ -398,11 +397,44 @@
       height: 70vh;
    }
 
-   .emailHover:hover {
+   /* .copy-email:hover {
         cursor: pointer;
-        transition: 2s;
+        transform: scale(1.75);
+        transition: 1s;
+   } */
+
+   .emailAddy:hover {
+    color: black;
    }
-  
+
+   .copy-email {
+    position: relative;
+    cursor: pointer;
+}
+
+.copy-email::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    background-color: #555454;
+    color: #D568A8;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.copy-email:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
    .contact-info-upper-container {
       display: flex;
       justify-content: center;

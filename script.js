@@ -9,7 +9,7 @@ function copyEmail() {
     const emailElement = document.querySelector(".copy-email");
     const emailText = emailElement.textContent || emailElement.innerText;
     navigator.clipboard.writeText(emailText).then(() => {
-        alert("Email copied to clipboard!");
+
     }).catch(err => {
         console.error('Failed to copy: ', err);
     });
