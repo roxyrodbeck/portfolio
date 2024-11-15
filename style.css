@@ -281,6 +281,7 @@
       border: rgb(53, 53, 53) 0.1rem solid;
       border-color: rgb(163, 163, 163);
       text-align: center;
+      
   }
   
   .section-container {
@@ -298,20 +299,54 @@
       position: relative;
   }
   
-  .experience-sub-title {
+  .experience-sub-title, .badges-sub-title {
       color: rgb(255, 248, 216);
       font-weight: 600;
       font-size: 1.75rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
   }
+
+  .badge-rows {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .badge:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .badge-details-container {
+    position: relative; 
+}
+
+.hide {
+    position: absolute; 
+    bottom: 0; 
+    right: 5; 
+    visibility: hidden; 
+    display: none; 
+}
+
+.badge:hover + .hide {
+    visibility: visible; 
+    display: block; 
+    color: black; 
+    background-color: #D568A8;
+    border: rgb(163, 163, 163) solid 2px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    opacity: 90%;
+    font-family: "Rubik", sans-serif;
+}
+
   
   .experience-details-container {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-    
   }
-  
   
   .hobbies {
       width: 90%;
@@ -358,7 +393,14 @@
     height: 80%;
     display: flex;
     justify-content: center;
-    
+  }
+
+  .center-this-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    margin-top: -1rem;
   }
   
   h3 {
@@ -410,6 +452,10 @@
       color: rgb(163, 163, 163);
       border-color: rgb(163, 163, 163);
    }
+
+   #accomplishments {
+    position: relative;
+}
   
    #contact {
       display: flex;
@@ -417,12 +463,6 @@
       flex-direction: column;
       height: 70vh;
    }
-
-   /* .copy-email:hover {
-        cursor: pointer;
-        transform: scale(1.75);
-        transition: 1s;
-   } */
 
    .emailAddy:hover {
     color: black;
@@ -467,19 +507,6 @@
       padding: 0.5rem;
       
    }
-
-   /* .features-upper-container {
-    width: 30%;
-    height: 150px;
-   }
-
-
-   .columns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-   } */
 
    .columns {
     display: flex;
