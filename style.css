@@ -413,7 +413,7 @@
       flex-wrap: wrap;
       flex-direction: row;
       color: rgb(163, 163, 163);
-      justify-content: space-around;
+      justify-content: space-between;
   }
   
   article {
