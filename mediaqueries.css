@@ -27,7 +27,24 @@
   }
   #hamburger-nav {
     display: flex;
+    position: relative;
+    z-index: 9999;
   }
+
+.menu-links {
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+li:hover {
+  color: #D568A8;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgba(181, 181, 181);
+      font-size: 0.5rem;
+      font-family: "Rubik", sans-serif;
+}
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -87,6 +104,11 @@
   footer {
     height: 40vh;
   }
+
+  .contact-info-upper-container {
+    gap: 1rem;
+  }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
