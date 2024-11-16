@@ -12,6 +12,13 @@
     height: fit-content;
   }
 
+  article {
+    display: flex;
+    justify-content:flex-start;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -46,8 +53,32 @@
   }
   .about-containers {
     margin-top: 0;
-
   }
+
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: rgb(163, 163, 163);
+    justify-content: center;
+}
+
+  .hobbies {
+    height: 50%;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      white-space: nowrap
+  }
+
+  article {
+    display: flex;
+    justify-content:flex-start;
+    width: 10rem;
+    gap: 0.5rem;
+}
 
 }
 
@@ -109,4 +140,25 @@
   .hobbies-photo {
     display: none;
   }
+
+  .hobbies {
+    height: 50%;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      white-space: nowrap
+  }
+
+  .projects-details-container {
+    margin-top: 1rem;
+  }
+
+  article {
+    display: flex;
+    justify-content:flex-start;
+    width: 10rem;
+    gap: 0.5rem;
+}
+
 }
