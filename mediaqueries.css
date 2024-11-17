@@ -19,12 +19,25 @@
     gap: 0.5rem;
 }
 
+.about-pic {
+  margin: 0.5rem 0;
+}
+
+.projects-title {
+  margin-bottom: 0.5rem;
+}
+
 }
 
 @media screen and (max-width: 1000px) {
   #desktop-nav {
     display: none;
   }
+
+  .projects-title {
+    margin-bottom: 0.5rem;
+  }
+
   #hamburger-nav {
     display: flex;
     position: relative;
@@ -37,12 +50,9 @@
 }
 
 li:hover {
-  color: #D568A8;
-      text-decoration: underline;
-      text-underline-offset: 1rem;
-      text-decoration-color: rgba(181, 181, 181);
-      font-size: 0.5rem;
-      font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgba(181, 181, 181);
 }
 
   #experience,
@@ -65,7 +75,7 @@ li:hover {
   }
   .section__pic-container {
     width: 275px;
-    height: 275px;
+    height: 275px; 
     margin: 0 auto 2rem;
   }
   .about-containers {
@@ -97,6 +107,10 @@ li:hover {
     gap: 0.5rem;
 }
 
+.about-pic {
+  margin-top: 0.5rem;
+}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +118,27 @@ li:hover {
   footer {
     height: 40vh;
   }
+
+  .projects-title {
+    margin-bottom: 0.5rem;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    position: relative;
+    z-index: 9999;
+  }
+
+.menu-links {
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+li:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgba(181, 181, 181);
+}
 
   .contact-info-upper-container {
     gap: 1rem;
@@ -181,6 +216,12 @@ li:hover {
     justify-content:flex-start;
     width: 10rem;
     gap: 0.5rem;
+}
+
+.details-container-hobbies {
+  display: flex;
+  justify-content: center;
+
 }
 
 }
