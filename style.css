@@ -14,6 +14,12 @@
   
   p {
       color: rgb(211, 201, 159);
+      
+  }
+
+  .features-upper-container > p {
+    text-wrap: nowrap;
+    width: 100%;
   }
   
   a, .btn {
@@ -46,7 +52,6 @@
   a:hover {
       color: #D568A8;
       text-decoration: underline;
-      text-underline-offset: 1rem;
       text-decoration-color: rgba(181, 181, 181);
   }
   
@@ -155,7 +160,7 @@
   }
   
   .roxy-photo-1 {
-      border: 5px solid black;
+      border: 3px solid black;
       border-radius: 50%;
       
   }
@@ -251,30 +256,40 @@
   .about-details-container {
       justify-content: center;
       flex-direction: column;
-        margin-top: -2rem;
+    margin-top: -2rem;
         
   }
   
   .about-containers, 
   .about-details-container {
       display: flex;
+      
   }
   
   .experience-details-container, .about-containers-hobbies {
       display: flex;
       justify-content: center;
-      padding: 0 1rem;
+      /* padding: 0 1rem; */
   }
   
   .about-pic {
+      display: flex;
       border-radius: 2rem;
       border: 2px solid black;
+      width: 400px;
+      height: 257px;
+      margin-top: 25px;
   }
   
   .arrow {
       position: absolute;
       right: -5rem;
       bottom: 2.5rem;
+      transform: scaleY(-1);
+  }
+  
+  .arrow:hover {
+    transform: scaleY(-1);
   }
   
   .details-container {
@@ -319,8 +334,12 @@
     transition: 0.5s;
   }
 
-  .badge-details-container {
+  .about-containers > .badge-details-container {
+    display: flex;
+    justify-content: center;
     position: relative; 
+    padding: 2rem;
+    margin-top: -20px;
 }
 
 .hide {
@@ -389,15 +408,14 @@
   }
 
   .badge {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    max-height: 70px;
   }
 
-  .badges-container {
-    width: auto;
-    height: 80%;
+  .badges-container  {
     display: flex;
     justify-content: center;
+
   }
 
   .center-this-box {
@@ -407,6 +425,13 @@
     height: 20%;
     margin-top: -1rem;
     position: relative;
+    padding: 3rem;
+  }
+
+  .badge-details {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
   }
   
   h3 {
@@ -527,6 +552,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    width: 100%;
+    white-space: nowrap;
 }
 
 .features-upper-container {
