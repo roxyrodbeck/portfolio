@@ -141,7 +141,6 @@
   
   section {
       padding-top: 2vh;
-      height: 97vh;
       margin: 0 10rem;
       box-sizing: border-box;
       min-height: fit-content;
@@ -150,6 +149,7 @@
   
   .section-container {
       display: flex;
+      height: 100vh;
   }
   
   #profile {
@@ -179,6 +179,7 @@
   
   .section__text p {
       font-weight: 600;
+      margin-bottom: 1rem;
   }
   
   .section__text__p2 {
@@ -189,7 +190,7 @@
   .title {
       font-size: 2.25rem;
       text-align: center;
-      margin-bottom: -1rem;
+      margin-bottom: 1rem;
       color: rgb(211, 201, 159);
   }
   
@@ -461,6 +462,9 @@
   
   #projects {
       position: relative;
+      height: auto;
+      min-height: fit-content;
+      padding-bottom: 2rem;
   }
   
   .color-container {
@@ -593,34 +597,40 @@
    }
 
 /* ============================================
-   COMMUNITY GALLERY SECTION - HORIZONTAL SCROLL
+   COMMUNITY GALLERY SECTION - TWO HORIZONTAL SCROLL ROWS
    ============================================ */
 
 #community-gallery {
     position: relative;
     height: auto;
     min-height: auto;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+.gallery-title {
+    margin-bottom: 2rem;
 }
 
 .gallery-subtitle {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: rgb(194, 193, 193);
     animation: fadeInUp 0.8s ease-out;
 }
 
 .gallery-container {
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    margin-bottom: 2rem;
 }
 
 /* Hide scrollbar but keep scrolling functional */
 .gallery-container::-webkit-scrollbar {
-    height: 6px;
+    height: 8px;
 }
 
 .gallery-container::-webkit-scrollbar-track {
@@ -629,7 +639,7 @@
 
 .gallery-container::-webkit-scrollbar-thumb {
     background: rgba(213, 104, 168, 0.5);
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .gallery-container::-webkit-scrollbar-thumb:hover {
@@ -642,7 +652,7 @@
     max-width: none;
     margin: 0 auto;
     width: fit-content;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .gallery-item {
@@ -764,10 +774,8 @@
 .fade-in-element:nth-child(7) { animation-delay: 0.7s; }
 .fade-in-element:nth-child(8) { animation-delay: 0.8s; }
 
-/* Enhanced section transitions */
-section {
-    animation: fadeInUp 0.8s ease-out;
-}
+/* Enhanced section transitions - removed to prevent hiding projects */
+/* Animations applied selectively, not to all sections */
 
 /* Smooth scroll enhancement for sections */
 section h1.title {
