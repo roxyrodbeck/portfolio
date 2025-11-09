@@ -5,8 +5,8 @@
   }
   .about-containers {
     flex-wrap: wrap;
-
   }
+
   #contact,
   #projects {
     height: fit-content;
@@ -20,11 +20,27 @@
 }
 
 .about-pic {
-  margin: 0.5rem 0;
+max-height: 99%;
+    width: auto;
+    margin-top: -1rem;
+
+}
+.about-title {
+    margin-top: -1rem;
 }
 
 .projects-title {
   margin-bottom: 0.5rem;
+}
+
+.roxy-photo-1 {
+    max-width: 150%;
+    height: auto;
+}
+
+.badge-details-container {
+    display: flex;
+    position: relative;
 }
 
 }
@@ -34,6 +50,19 @@
     display: none;
   }
 
+  .badge-details-container {
+      display: flex;
+      position: relative;
+  }
+
+  .roxy-photo-1 {
+      max-width: 150%;
+      height: auto;
+  }
+
+.about-title {
+    margin-top: -1rem;
+}
   .projects-title {
     margin-bottom: 0.5rem;
   }
@@ -97,7 +126,7 @@ li:hover {
       display: flex;
       justify-content: center;
       margin: auto;
-      white-space: nowrap;
+      white-space: nowrap
   }
 
   article {
@@ -108,11 +137,11 @@ li:hover {
 }
 
 .about-pic {
-  margin-top: 0.5rem;
+    max-height: 99%;
+        width: auto;
+margin-top: -1rem;
+
 }
-
-
-
 
 }
 
@@ -208,11 +237,6 @@ li:hover {
       justify-content: center;
       margin: auto;
       white-space: nowrap;
-  }
-
-  .about-containers-hobbies {
-    display: flex;
-    justify-content: center;
   }
 
   .projects-details-container {
